@@ -1,0 +1,134 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 ;
+  padding: 0 20px;
+}
+
+.navbar {
+  background-color: lightblue;
+  color: black;
+  padding: 10px 0;
+}
+.navbar .navbar-logo h1 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin-bottom: 10px;
+}
+.navbar .navbar-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar .navbar-menu ul li {
+  margin-right: 20px;
+}
+.navbar .navbar-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  
+}
+.navbar .navbar-menu ul li a:hover {
+    color: blue;
+  }
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header .moving-text-container {
+  background-color:lightpink;
+  color: white;
+  padding: 0px;
+  text-align: center;
+}
+.header .moving-text-container .moving-text {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.2em;
+  animation: moveText 10s linear infinite;
+}
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+ h3 {
+
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+}
+h4 {
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  border-bottom: 2px solid black;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+h5 {
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-size: 15px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.resume-container {
+  display: flex;
+  margin: 40px 0;
+}
+.resume-container .resume-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.resume-container .resume-column h2 {
+  color: lightblue;
+  border-bottom: 2px solid lightblue ;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#contactButton {
+  background-color: lightblue;
+  align-items: center;
+  color: black;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: lightpink;
+  color: white;
+  padding: 10px ;
+  text-align: center;
+}
+
